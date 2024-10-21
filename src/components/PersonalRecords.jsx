@@ -28,7 +28,6 @@ const PersonalRecords = () => {
       dateAchieved: 'March 24, 2024',
       location: 'Dogg Yard',
     },
-    // Add more movements here as needed
   ];
 
   return (
@@ -63,26 +62,33 @@ const PersonalRecords = () => {
         className="flex justify-center mb-8 px-4"
       >
         <div className="w-full max-w">
-          <table className="table-auto w-full text-xs sm:text-base text-center border-collapse">
-            <thead>
-              <tr className="bg-neutral-900 text-blue-300">
-                <th className="px-1 sm:px-4 py-1 sm:py-2">Movement</th>
-                <th className="px-1 sm:px-4 py-1 sm:py-2">Weight</th>
-                <th className="px-1 sm:px-4 py-1 sm:py-2">Date Achieved</th>
-                <th className="px-1 sm:px-4 py-1 sm:py-2">Location</th>
-              </tr>
-            </thead>
-            <tbody>
-              {records.map((record, index) => (
-                <tr key={index} className="bg-neutral-800 text-white">
-                  <td className="border px-1 sm:px-4 py-1 sm:py-2">{record.movement}</td>
-                  <td className="border px-1 sm:px-4 py-1 sm:py-2">{record.weight}</td>
-                  <td className="border px-1 sm:px-4 py-1 sm:py-2">{record.dateAchieved}</td>
-                  <td className="border px-1 sm:px-4 py-1 sm:py-2">{record.location}</td>
+
+          {/* Chalkboard Background */}
+          <div className="relative h-full w-full bg-slate-950 p-6 rounded-lg">
+            <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div>
+
+            <table className="relative table-auto w-full text-xs sm:text-base text-center border-collapse">
+              <thead>
+                <tr className="bg-transparent text-blue-300 font-bold text-lg" style={{ fontFamily: "'Caveat', cursive", textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)', fontWeight: 700 }}>
+                  <th className="px-1 sm:px-4 py-1 sm:py-2 border-b border-white">Movement</th>
+                  <th className="px-1 sm:px-4 py-1 sm:py-2 border-b border-white">Weight</th>
+                  <th className="px-1 sm:px-4 py-1 sm:py-2 border-b border-white">Date Achieved</th>
+                  <th className="px-1 sm:px-4 py-1 sm:py-2 border-b border-white">Location</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {records.map((record, index) => (
+                  <tr key={index} className="text-white text-base" style={{ fontFamily: "'Caveat', cursive", textShadow: '1px 1px 3px rgba(255, 255, 255, 0.6)', fontWeight: 700 }}>
+                    <td className="border px-1 sm:px-4 py-1 sm:py-2 border-white">{record.movement}</td>
+                    <td className="border px-1 sm:px-4 py-1 sm:py-2 border-white">{record.weight}</td>
+                    <td className="border px-1 sm:px-4 py-1 sm:py-2 border-white">{record.dateAchieved}</td>
+                    <td className="border px-1 sm:px-4 py-1 sm:py-2 border-white">{record.location}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
         </div>
       </motion.div>
     </div>
