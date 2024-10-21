@@ -31,7 +31,7 @@ const PersonalRecords = () => {
   ];
 
   return (
-    <div className="border-b border-neutral-900 pb-12">
+    <div className="border-b border-neutral-900 pb-12 w-full">
       {/* Announcement for Next PR Week */}
       <motion.div
         initial={{ opacity: 0, y: -50 }}
@@ -54,17 +54,16 @@ const PersonalRecords = () => {
         Current Personal Records as of <span className="text-blue-300">{getCurrentDate()}</span>
       </motion.h1>
 
-      {/* Table Section with Smooth Transition */}
+      {/* Table Section */}
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-        className="flex justify-center mb-8 px-4"
+        className="mb-8 w-full"
       >
-        <div className="w-full max-w">
-
+        <div className="w-full overflow-x-auto" style={{ maxWidth: '100%' }}>
           {/* Chalkboard Background */}
-          <div className="relative h-full w-full bg-slate-950 p-6 rounded-lg">
+          <div className="relative h-full w-full bg-slate-950 p-1 sm:p-6 rounded-lg">
             <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div>
 
             <table className="relative table-auto w-full text-xs sm:text-base text-center border-collapse">
@@ -88,7 +87,6 @@ const PersonalRecords = () => {
               </tbody>
             </table>
           </div>
-
         </div>
       </motion.div>
     </div>
