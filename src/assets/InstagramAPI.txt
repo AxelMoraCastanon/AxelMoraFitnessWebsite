@@ -1,0 +1,11 @@
+Instagram App ID
+906428324780393
+
+Instagram App Secret
+d38c3d43b62e3a1daca29b9202cfcec9
+
+Instagram Display Name
+axelsmora16
+
+User Token
+IGQWRPSlVSR0tiNEJ1eVBFLWg0bFlnWVE0VEVmNWczZAktjT2dldTRGVEgzOXFRZAk1CZAS1NNWN1MHotNUpjZAWpIWXFsdEU3ZA0FfRll6MjltMXpYckRISnc2aWtZAQmd1aWxiaDZA3blkyT3JvWVJadHA5YWtSMGFXWjgZD

@@ -1,12 +1,10 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Technologies from "./components/Technologies";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Recommendations from "./components/Recommendations";
+import PersonalRecords from "./components/PersonalRecords";
+import Gallery from "./components/Gallery";
+import InstagramFeed from "./components/InstagramFeed";
 import Contact from "./components/Contact";
-import Certifications from "./components/Certifications";
 
 const App = () => {
   return (
@@ -22,11 +20,9 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <About/>
-      <Technologies/>
-      <Experience/>
-      <Projects/>
-      <Recommendations/>
-      <Certifications/>
+      <PersonalRecords/>
+      <Gallery/>
+      <InstagramFeed/>
       <Contact/>
     </div>
   </div>

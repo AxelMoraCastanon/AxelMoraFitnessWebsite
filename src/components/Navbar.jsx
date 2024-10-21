@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+
+/*
 import logo from '../assets/AxelMoraLogo.png';
-import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+*/
+
+import { FaInstagram } from 'react-icons/fa';
 import { MdEmail, MdQrCode } from 'react-icons/md'; // Import Icons
 import { CONTACT } from '../constants'; // Import CONTACT
 import { QRCodeCanvas } from 'qrcode.react'; // Import QR Code Library
@@ -51,28 +55,6 @@ const Navbar = () => {
             whileHover={iconHover}
           >
             <MdEmail />
-          </motion.a>
-
-          {/* LinkedIn Icon */}
-          <motion.a
-            href={CONTACT.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-500"
-            whileHover={iconHover}
-          >
-            <FaLinkedin />
-          </motion.a>
-
-          {/* GitHub Icon */}
-          <motion.a
-            href={CONTACT.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gray-500"
-            whileHover={iconHover}
-          >
-            <FaGithub />
           </motion.a>
 
           {/* Instagram Icon */}

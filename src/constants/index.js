@@ -1,130 +1,38 @@
-// Bond Portfolio screens images
-import BondPortfolio from "../assets/projects/BondPortfolioScreens/BondPortfolio.jpg";
-import BondList from "../assets/projects/BondPortfolioScreens/BondList.png";
-import BondListDetails from "../assets/projects/BondPortfolioScreens/BondListDetails.png";
-import IndustryList from "../assets/projects/BondPortfolioScreens/IndustryList.png";
-import BondsByIndustry from "../assets/projects/BondPortfolioScreens/BondsByIndustry.png";
-import StratificationReportsList from "../assets/projects/BondPortfolioScreens/StratificationReportsList.png";
-import CouponStratification from "../assets/projects/BondPortfolioScreens/CouponStratification.png";
-import YieldStratification from "../assets/projects/BondPortfolioScreens/YieldStratification.png";
-import DatabaseTables from "../assets/projects/BondPortfolioScreens/DatabaseTables.png";
-import BondsTable from "../assets/projects/BondPortfolioScreens/BondsTable.png";
-import StratifyCouponsTable from "../assets/projects/BondPortfolioScreens/StratifyCouponsTable.png";
-import StratifyIndustryTable from "../assets/projects/BondPortfolioScreens/StratifyIndustryTable.png";
-import StratifyRatingGroupTable from "../assets/projects/BondPortfolioScreens/StratifyRatingGroupTable.png";
-import StratifyRatingsTable from "../assets/projects/BondPortfolioScreens/StratifyRatingsTable.png";
-import StratifyTermTable from "../assets/projects/BondPortfolioScreens/StratifyTermTable.png";
-import StratifyYieldTable from "../assets/projects/BondPortfolioScreens/StratifyYieldTable.png";
+//Axel's workout pictures
+import profilePicture from "../assets/AxelMoraProfilePicture.png";
+import AxelMoraFarmersWalk from "../assets/AxelMoraFarmersWalk.png";
+import AxelMoraLogBar from "../assets/AxelMoraLogBar.png";
+import AxelMoraCurlBar from "../assets/AxelMoraCurlBar.png";
+import LogBar from "../assets/LogBar.png";
 
-// GymPulse screens images
-import InteractiveCalendar from "../assets/projects/GymPulseScreens/InteractiveCalendar.jpeg";
-import AppleMapsScreen from "../assets/projects/GymPulseScreens/AppleMapsScreen.jpeg";
-import ContactScreen from "../assets/projects/GymPulseScreens/ContactScreen.jpeg";
-import LocationBasedSearch from "../assets/projects/GymPulseScreens/LocationBasedSearch.jpeg";
-import LocationInfoScreen from "../assets/projects/GymPulseScreens/LocationInfoScreen.jpeg";
-import TrainerinformationScreen from "../assets/projects/GymPulseScreens/TrainerinformationScreen.jpeg";
-import PaymentsStripe from "../assets/projects/GymPulseScreens/PaymentsStripe.jpeg";
-import StripeCamera from "../assets/projects/GymPulseScreens/StripeCamera.jpeg";
+export const HERO_CONTENT = `Powerlifter, Strongman, and tech enthusiast based in Oxnard, CA. Lover of BBQ, music, soccer, and all things fitness.`; 
 
-// BidMe screens images
-import BidMeDashboard from "../assets/projects/BidMeScreens/BidMeDashboard.jpg";
-import BidMeLocationSearch from "../assets/projects/BidMeScreens/BidMeLocationSearch.jpg";
-import BidMeCreateBid from "../assets/projects/BidMeScreens/BidMeCreateBid.jpg";
-import BidMeInvoice from "../assets/projects/BidMeScreens/BidMeInvoice.jpg";
+export const ABOUT_TEXT = `I grew up in Oxnard, CA, with a passion for sports, including soccer, basketball, volleyball, cross country, and track & field. 
+I'm an avid soccer fan and love following the sport. My favorite soccer team is Club America from Liga MX.
 
-//AI Club Image and Resume
-import AIClubImage from "../assets/CSUCIArtificialIntelligenceClub.jpg";
-import AxelMoraResume from "../assets/AxelMoraResume.pdf"; // Updated import
+During my time at Oxnard High School, I competed in volleyball for one year and spent three years running cross country and track, with my main events in track being the 800m and 1600m.
+I also played soccer in the local recreation leagues. 
+After high school, I continued my athletic journey at Ventura College, running cross country and track, where our team made it to the California state finals in 2017. 
+Since 2021, I’ve shifted my focus to powerlifting and, more recently, strongman training at Dogg Yard Gym in Ventura, CA. 
+I started humbly, using the 35 lb barbell for the core powerlifting movements—bench press, squats, and deadlifts. 
+Since then, I’ve made significant progress and plan to compete in strongman competitions starting in 2025. 
 
-export const HERO_CONTENT = `I’m an AWS-certified Software Engineer with a B.S. in Computer Science from CSU Channel Islands.
- I specialize in integrating cloud services to build secure, scalable, and reliable solutions.
-  Driven by a passion for continuous learning and cloud computing,
- I focus on delivering impactful software that makes a difference.`;
+Aside from my athletic pursuits, I earned my B.S. in Computer Science from CSU Channel Islands in December 2023.
 
-export const ABOUT_TEXT = `I’m a detail-oriented, AWS-certified Software Engineer with a B.S. in Computer Science from CSU Channel Islands. 
-As a co-founder of my university’s AI Club, I led cloud workshops partnering with companies such as AWS & Mission Cloud, enhancing both my leadership and technical expertise. 
-I developed GymPulse and BidMe using Agile practices and led the creation of a Bond Portfolio App, managing everything from research to deployment. 
-I integrate cloud services and infrastructure into every project, ensuring security, scalability, reliability, and efficiency. 
-My passion for continuous learning, cloud computing, and software development drives me to deliver impactful solutions. 
-Outside of tech, I train as a powerlifter and strongman.`;
+I'm passionate about working on mobile apps, cloud computing, networking & infrastructure, and currently gaining experience with web apps & websites.
 
-export const EXPERIENCES = [
-  {
-    date: "January 2023 - January 2024",
-    role: "Club Treasurer & Co-Founder",
-    company: "CSU Channel Islands Artificial Intelligence Club",
-    image: AIClubImage,
-    description: `Led AI and cloud computing initiatives, organizing workshops and a successful AWS Cloud-Computing Hackathon
-                  in collaboration with Amazon Web Services and Mission Cloud, fostering innovation and problem-solving. 
-                  I also managed financial operations to optimize resource allocation, ensuring impactful and cost-effective outcomes.`,
-    technologies: ["Amazon Web Services (AWS)", "Machine Learning (M.L.)", "Artificial Intelligence (A.I.)", "C", "Linux", "Ubuntu", "Excel", "Powerpoint", "Leadership", "Cross-Functional Teams"],
-  },
-];
+When I’m not training or coding, I enjoy all kinds of music—rap, rock, metal, pop, you name it. In the gym, I love listening to west coast rap and metal bands like Metallica, Iron Maiden, and Megadeth to get pumped up.
 
-export const PROJECTS = [
-  {
-    title: "Bond Portfolio App",
-    date: "June 2024 - Pesent",
-    position:"Software Engineer",
-    image: [BondPortfolio,BondList,BondListDetails,IndustryList,BondsByIndustry,StratificationReportsList,CouponStratification,YieldStratification,
-          DatabaseTables,BondsTable,StratifyCouponsTable,StratifyIndustryTable,StratifyRatingGroupTable,StratifyRatingsTable,StratifyTermTable,StratifyYieldTable],
-    description:
-      `Designed and developed a bond portfolio management Android app using Java, Kotlin, and XML, 
-      providing users with the ability to perform CRUD operations and generate reports such as coupon stratifications and portfolio summaries. 
-      Taking ownership of the entire development lifecycle, from research and design to deployment, 
-      I collaborated closely with stakeholders to replace traditional Excel-based workflows with a secure, user-friendly mobile solution. 
-      To support seamless backend interactions, I configured AWS infrastructure—including EC2, RDS, Lambda, CloudWatch, and IAM—using a LAMP stack for scalability and reliability. 
-      Furthermore, I ensured smooth data transactions between the app and the AWS RDS MySQL database by testing PHP API endpoints with Postman, 
-      guaranteeing secure and efficient communication across the system.`,
-    technologies: ["Java", "Kotlin", "XML", "AWS EC2", "AWS RDS", "AWS Lambda", "CloudWatch", "IAM", "LAMP Stack", "PHP", "MySQL", "Postman"],
-  },
-  {
-    title: "GymPulse App",
-    date: "August 2023 - December 2023",
-    position:"Software Engineer",
-    image: [InteractiveCalendar,AppleMapsScreen,ContactScreen,LocationBasedSearch,LocationInfoScreen,TrainerinformationScreen,PaymentsStripe,StripeCamera],
-    description:
-      `Enhanced backend data handling on AWS RDS MySQL, 
-      improving data retrieval times by 30% and significantly boosting the app's responsiveness and overall user experience. 
-      Streamlined the testing and deployment processes by implementing a CI/CD pipeline with AWS CodeStar, 
-      reducing deployment errors by 20% and ensuring more reliable app updates. 
-      Additionally, designed a user-friendly interface in Xcode using Swift, 
-      incorporating intuitive UI/UX principles and seamlessly integrating the Stripe SDK for payment processing, 
-      which led to a 15% increase in user engagement during beta testing.`,
-    technologies: ["Swift", "Xcode", "AWS CodeStar", "AWS RDS MySQL", "Stripe SDK"],
-  },
-  {
-    title: "BidMe App",
-    date: "August 2022 - December 2022",
-    position:"Software Engineer",
-    image: [BidMeDashboard,BidMeLocationSearch,BidMeCreateBid,BidMeInvoice],
-    description:
-      `Leveraged Unix shell scripting to automate data backup and restore processes for the Amazon RDS MySQL database,
-      ensuring data integrity while minimizing downtime during maintenance windows. 
-      Optimized SQL queries to efficiently manage large datasets, 
-      reducing execution time by 40% and significantly enhancing the app’s performance. 
-      Additionally, designed a custom API using Java and SpringBoot to enable seamless integration with the MySQL database, 
-      supporting real-time data synchronization across modules and improving both user experience and system reliability.`,
-    technologies: ["Java", "SpringBoot", "SQL", "Unix Shell Scripting", "AWS RDS MySQL"],
-  },
-  {
-    title: "CSU Channel Islands CI-LISP Interpreter",
-    date: "January 2022 - May 2022",
-    position:"Software Engineer",
-    image:null,
-    description:
-      `Developed an interpreter for CI-LISP using C, addressing complex challenges such as tokenization, parsing, 
-      and evaluating arithmetic expressions with proper scoping rules, ensuring the successful implementation of the language. 
-      Utilized a Unix/Linux environment for development, leveraging tools like Lex and Yacc for parsing, 
-      and automated testing processes with shell scripts, improving testing efficiency by 25%. 
-      Additionally, introduced advanced features like typecasting and conditionals, 
-      enhancing the computational capabilities of CI-LISP and making it a more versatile and powerful tool for users.`,
-    technologies: ["C", "Lex", "Yacc", "Unix/Linux", "Shell Scripting"],
-  },
-];
+I’m a huge foodie. My favorite cuisine is Mexican, and I can never resist enchiladas de mole. I also love seafood, Italian, sushi, French, and BBQ.
+
+Speaking of BBQ, I love smoking ribs in my backyard, and my favorite dish to make is St. Louis-style ribs. And when it comes to desserts, ice cream is my ultimate weakness.
+
+My favorite movie genres are action, sci-fi, and horror. I dream of traveling to soccer stadiums in Europe and Latin America. 
+
+I’m inspired by athletes like Brian Shaw and Hafthor Bjornsson, and when I'm not working out, you'll probably find me catching up on my favorite tv shows and films or experimenting with new BBQ recipes.`;
+
 
 export const CONTACT = {
   email: "axelmora2011@gmail.com",
-  linkedin: "https://www.linkedin.com/in/axel-mora-36508316a/",
-  github: "https://github.com/AxelMoraCastanon"
+  instagram: "https://www.instagram.com/axelsmora16/"
 };
