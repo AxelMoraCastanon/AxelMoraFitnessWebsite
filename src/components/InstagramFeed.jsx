@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 // Helper function to format today's date
 const getCurrentDate = () => {
@@ -8,48 +7,41 @@ const getCurrentDate = () => {
 };
 
 const InstagramFeed = () => {
-  // Variants for motion animation
-  const imageVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: "easeOut" }
-    },
-    hover: {
-      scale: 1.05,
-      transition: { duration: 0.3 }
-    }
-  };
-
   return (
-    <div className="border-b border-neutral-900 pb-12">
-      {/* Title with Parallax Effect */}
-      <motion.h1
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="my-8 text-center text-3xl sm:text-4xl"
-      >
+    <div>
+      <h1 className="text-center text-2xl mb-4">
         Instagram Feed up until <span className="text-blue-300">{getCurrentDate()}</span>
-      </motion.h1>
+      </h1>
 
-      {/* Resizable LightWidget Instagram Feed */}
-      <div className="flex justify-center">
-        <iframe
-          src="//lightwidget.com/widgets/3d1923049bf25095bad126feeec47ecf.html"
-          scrolling="no"
-          allowTransparency="true"
-          className="lightwidget-widget"
-          style={{
-            width: '100%',
-            height: '600px', // Adjust this height as needed
-            maxWidth: '1200px', // Limit maximum width on larger screens
-            border: 0,
-            overflow: 'hidden'
-          }}
-        ></iframe>
-      </div>
+      {/* Instagram Feed with height adjustments for mobile and larger screens */}
+      <iframe
+        src="https://snapwidget.com/embed/1082144"
+        className="instagram-widget"
+        scrolling="no"
+        allowTransparency="true"
+        frameBorder="0"
+        title="Instagram Feed"
+        style={{
+          border: 'none',
+          overflow: 'hidden',
+          width: '100%',
+        }}
+      ></iframe>
+
+      {/* Responsive CSS to adjust height based on screen size */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .instagram-widget {
+            height: 600px;  // Height for mobile screens
+          }
+        }
+
+        @media (min-width: 769px) {
+          .instagram-widget {
+            height: 2000px;  // Height for larger screens to display full 3x5 grid
+          }
+        }
+      `}</style>
     </div>
   );
 };
