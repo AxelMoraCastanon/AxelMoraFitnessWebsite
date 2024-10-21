@@ -4,11 +4,11 @@ import React, { useState } from 'react';
 import logo from '../assets/AxelMoraLogo.png';
 */
 
-import { FaInstagram } from 'react-icons/fa';
+import { FaInstagram, FaLaptopCode } from 'react-icons/fa';
 import { MdEmail, MdQrCode } from 'react-icons/md'; // Import Icons
 import { CONTACT } from '../constants'; // Import CONTACT
 import { QRCodeCanvas } from 'qrcode.react'; // Import QR Code Library
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [showQR, setShowQR] = useState(false); // Manage QR modal visibility
@@ -48,6 +48,17 @@ const Navbar = () => {
 
         {/* Icons Section */}
         <div className="flex items-center gap-6 text-2xl ml-auto">
+          {/* Laptop (Portfolio) Icon */}
+          <motion.a
+            href={CONTACT.softwareEngineeringPortfolioWebsite}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-500"
+            whileHover={iconHover}
+          >
+            <FaLaptopCode />
+          </motion.a>
+
           {/* Email Icon */}
           <motion.a
             href={`mailto:${CONTACT.email}`}

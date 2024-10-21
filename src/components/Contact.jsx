@@ -68,8 +68,7 @@ const Contact = () => {
           </motion.div>
         )}
 
-        
-        {/* Instagram Section with QR Code */}
+        {/* Instagram Section */}
         {CONTACT.instagram && (
           <motion.div className="flex flex-col items-center" variants={itemVariants}>
             <span className="font-semibold text-blue-300">Instagram: </span>
@@ -82,6 +81,28 @@ const Contact = () => {
               whileHover="hover"
             >
               {CONTACT.instagram}
+              <motion.div
+                className="absolute bottom-0 left-0 h-0.5 bg-blue-300"
+                initial={{ width: 0 }}
+                animate={underlineEffect}
+              />
+            </motion.a>
+          </motion.div>
+        )}
+
+        {/* Axel's Software Engineer Portfolio Website */}
+        {CONTACT.softwareEngineeringPortfolioWebsite && (
+          <motion.div className="flex flex-col items-center mt-6" variants={itemVariants}>
+            <span className="font-semibold text-blue-300">Axel's Software Engineer Portfolio Website: </span>
+            <motion.a
+              href={CONTACT.softwareEngineeringPortfolioWebsite}
+              className="border-b relative overflow-hidden"
+              target="_blank"
+              rel="noopener noreferrer"
+              variants={hoverEffect}
+              whileHover="hover"
+            >
+              {CONTACT.softwareEngineeringPortfolioWebsite}
               <motion.div
                 className="absolute bottom-0 left-0 h-0.5 bg-blue-300"
                 initial={{ width: 0 }}

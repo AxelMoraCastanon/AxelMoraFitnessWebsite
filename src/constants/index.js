@@ -34,5 +34,6 @@ I’m inspired by athletes like Brian Shaw and Hafthor Bjornsson, and when I'm n
 
 export const CONTACT = {
   email: "axelmora2011@gmail.com",
-  instagram: "https://www.instagram.com/axelsmora16/"
+  instagram: "https://www.instagram.com/axelsmora16/",
+  softwareEngineeringPortfolioWebsite: "https://axelmoracastanon.github.io/AxelPortfolioWebsite/",
 };
