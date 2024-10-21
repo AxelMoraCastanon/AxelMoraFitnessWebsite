@@ -40,7 +40,7 @@ const PersonalRecords = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="my-4 text-center"
       >
-        <h2 className="text-xl sm:text-2xl text-blue-300">
+        <h2 className="text-lg sm:text-xl text-blue-300">
           Next PR Week scheduled for the week of November 4, 2024
         </h2>
       </motion.div>
@@ -50,7 +50,7 @@ const PersonalRecords = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="my-8 text-center text-3xl sm:text-4xl"
+        className="my-8 text-center text-2xl sm:text-3xl"
       >
         Current Personal Records as of <span className="text-blue-300">{getCurrentDate()}</span>
       </motion.h1>
@@ -62,26 +62,28 @@ const PersonalRecords = () => {
         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         className="flex justify-center mb-8 px-4"
       >
-        <table className="table-auto w-full max-w-2xl text-lg text-center border-collapse">
-          <thead>
-            <tr className="bg-neutral-900 text-blue-300">
-              <th className="px-4 py-2">Movement</th>
-              <th className="px-4 py-2">Weight</th>
-              <th className="px-4 py-2">Date Achieved</th>
-              <th className="px-4 py-2">Location</th>
-            </tr>
-          </thead>
-          <tbody>
-            {records.map((record, index) => (
-              <tr key={index} className="bg-neutral-800 text-white">
-                <td className="border px-4 py-2">{record.movement}</td>
-                <td className="border px-4 py-2">{record.weight}</td>
-                <td className="border px-4 py-2">{record.dateAchieved}</td>
-                <td className="border px-4 py-2">{record.location}</td>
+        <div className="w-full max-w">
+          <table className="table-auto w-full text-xs sm:text-base text-center border-collapse">
+            <thead>
+              <tr className="bg-neutral-900 text-blue-300">
+                <th className="px-1 sm:px-4 py-1 sm:py-2">Movement</th>
+                <th className="px-1 sm:px-4 py-1 sm:py-2">Weight</th>
+                <th className="px-1 sm:px-4 py-1 sm:py-2">Date Achieved</th>
+                <th className="px-1 sm:px-4 py-1 sm:py-2">Location</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {records.map((record, index) => (
+                <tr key={index} className="bg-neutral-800 text-white">
+                  <td className="border px-1 sm:px-4 py-1 sm:py-2">{record.movement}</td>
+                  <td className="border px-1 sm:px-4 py-1 sm:py-2">{record.weight}</td>
+                  <td className="border px-1 sm:px-4 py-1 sm:py-2">{record.dateAchieved}</td>
+                  <td className="border px-1 sm:px-4 py-1 sm:py-2">{record.location}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </motion.div>
     </div>
   );
